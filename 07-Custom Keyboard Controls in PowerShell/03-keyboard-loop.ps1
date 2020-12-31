@@ -1,9 +1,10 @@
 do {
     Start-Sleep -Milliseconds 100
     if ($Host.UI.RawUI.KeyAvailable) {
-        # Write-Host -ForegroundColor Red -Object Captured
+        Write-Host -ForegroundColor Red -Object Captured
         $KeyInfo = $Host.UI.RawUI.ReadKey('NoEcho, IncludeKeyUp')
     }
+
     switch ($KeyInfo) {
         { $PSItem.VirtualKeyCode -eq 65 -and $PSItem.ControlKeyState -eq 'LeftCtrlPressed' } {
             Write-Host -ForegroundColor Blue -Object (Get-Process -Id $Pid).CPU

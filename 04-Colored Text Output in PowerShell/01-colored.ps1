@@ -3,7 +3,7 @@
 "`e[48;2;155;0;0mHello Trevor"
 
 # Change the foreground (text) color
-"`e[38;2;150;20;150mHello Trevor"
+"`e[38;2;150;20;150mHello Trevor`e[0m"
 
 # Oh no, the effects are stuck, what do I do?
 

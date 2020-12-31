@@ -12,7 +12,7 @@ while ($true) {
 
 while ($true) {
     $Tone = [int](1300 + 300*[Math]::Sin([DateTime]::UtcNow.Millisecond))
-    $Length = 100
+    $Length = 500
     $Tone
     [Console]::Beep($Tone, $Length)
 }
